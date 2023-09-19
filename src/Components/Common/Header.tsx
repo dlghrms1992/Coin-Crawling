@@ -1,7 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import {ButtonGroup, ToggleButton } from 'react-bootstrap';
+import {Button, ButtonGroup, Form, ToggleButton } from 'react-bootstrap';
+import { selectExchangeArr } from '../../constants';
 // import {useState} from "react";
 // const [radioValue, setRadioValue] = useState('1');
 
@@ -28,8 +29,18 @@ const Header: React.FC = () => {
                             ))}
                         </ButtonGroup>
                     </Col>
-                    <Col xs={6} md={4}>this is Search Or Crawiling</Col>
-                    <Col xs={6} md={4}>ETC...</Col>
+                    <Col xs={6} md={5}>
+                        <Form.Control size="lg" type="text" placeholder="검색어를 입력해주세요!" />
+
+                    </Col>
+                    <Col xs="auto" md={1}>
+                        <Button variant="primary">검색</Button>
+                    </Col>
+                    <Col xs={3} md={2}>
+                        ETC...
+
+                        asdasdasdsadsadsadsa
+                    </Col>
                 </Row>
             </Container>
 

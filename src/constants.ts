@@ -1,4 +1,4 @@
-const selectExchangeArr: Array<{ name: string; value: string; apiUrl: string; krName: string }> = [
+export const selectExchangeArr: Array<{ name: string; value: string; apiUrl: string; krName: string }> = [
         {
             name: "UpBit",
             value: "1",
@@ -12,3 +12,4 @@ const selectExchangeArr: Array<{ name: string; value: string; apiUrl: string; kr
             krName: "바이낸스"
         },
 ];
+
