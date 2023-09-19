@@ -3,6 +3,7 @@ import LeftContents from "./TopContents/RightContents";
 import RightContents from "./TopContents/RightContents";
 import MiddleContents from "./TopContents/MiddleContents";
 import CoinCrawling from "./CoinCrawling/CoinCrawling";
+import CoinNews from "./CoinNews/CoinNews";
 
 const MainView: React.FC = () => {
     return (
@@ -15,6 +16,9 @@ const MainView: React.FC = () => {
                 </Row>
                 <Row>
                     <CoinCrawling></CoinCrawling>
+                </Row>
+                <Row xs={1} md={2} className="g-4">
+                    <CoinNews></CoinNews>
                 </Row>
             </Container>
         </div>

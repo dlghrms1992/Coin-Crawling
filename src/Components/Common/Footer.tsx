@@ -2,7 +2,9 @@ const Footer: React.FC = () => {
     return (
         <footer>
 
-            <h1>this is footer</h1>
+            <p>
+                Copyright dev_g
+            </p>
         </footer>
     );
 };
