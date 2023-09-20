@@ -4,6 +4,7 @@ import RightContents from "./TopContents/RightContents";
 import MiddleContents from "./TopContents/MiddleContents";
 import CoinCrawling from "./CoinCrawling/CoinCrawling";
 import CoinNews from "./CoinNews/CoinNews";
+import CoinSearch from "./CoinSearch/CoinSearch";
 
 const MainView: React.FC = () => {
     return (
@@ -19,6 +20,9 @@ const MainView: React.FC = () => {
                 </Row>
                 <Row xs={1} md={2} className="g-4">
                     <CoinNews></CoinNews>
+                </Row>
+                <Row>
+                    <CoinSearch></CoinSearch>
                 </Row>
             </Container>
         </div>
