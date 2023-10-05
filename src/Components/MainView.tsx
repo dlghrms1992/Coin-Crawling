@@ -18,9 +18,10 @@ const MainView: React.FC = () => {
                 <Row>
                     <CoinCrawling></CoinCrawling>
                 </Row>
-                <Row xs={1} md={2} className="g-4">
+                <>
                     <CoinNews></CoinNews>
-                </Row>
+                </>
+
                 <Row>
                     <CoinSearch></CoinSearch>
                 </Row>

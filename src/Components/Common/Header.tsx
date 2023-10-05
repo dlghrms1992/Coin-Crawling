@@ -3,9 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {Button, ButtonGroup, Form, ToggleButton} from 'react-bootstrap';
 import { selectExchangeArr } from '../../constants';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
-import Offcanvas from 'react-bootstrap/Offcanvas';
 import Navbar from 'react-bootstrap/Navbar';
 
 // import {useState} from "react";
@@ -34,27 +32,35 @@ const Header: React.FC = () => {
                     </ButtonGroup>
                 </Navbar.Brand>
                 <Navbar.Collapse className="justify-content-end">
-
-                    <Form >
-                        <Row>
-                            <Col xs="auto">
-                                <Form.Control
-                                    type="text"
-                                    placeholder="Search"
-                                    className=" mr-sm-2"
-                                />
-                            </Col>
-                            <Col xs="auto">
-                                <Button type="submit">Submit</Button>
-                            </Col>
-                            <Col xs="auto">
-                                <Button variant="outline-success">로그인</Button>
-                            </Col>
-                            <Col xs="auto">
-                                <Button variant="outline-success">알림 </Button>
-                            </Col>
-                        </Row>
-                    </Form>
+                    <Nav
+                        activeKey="/">
+                        <Form >
+                            <Row>
+                                <Col xs="auto">
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="Search"
+                                        className=" mr-sm-2"
+                                    />
+                                </Col>
+                                <Col xs="auto">
+                                    <Button type="submit">Submit</Button>
+                                </Col>
+                                <Col xs="auto">
+                                    <Button variant="outline-success">로그인</Button>
+                                </Col>
+                                <Col xs="auto">
+                                    <Button variant="outline-success">
+                                    <Nav.Item>
+                                        <Nav.Link href="/m">관리</Nav.Link>
+                                    </Nav.Item></Button>
+                                </Col>
+                                <Col xs="auto">
+                                    <Button variant="outline-success">알림 </Button>
+                                </Col>
+                            </Row>
+                        </Form>
+                    </Nav>
                 </Navbar.Collapse>
             </Navbar>
         </header>
