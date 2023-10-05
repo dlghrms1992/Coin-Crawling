@@ -1,14 +1,12 @@
+import {Accordion, Card, Row} from "react-bootstrap";
 import Col from "react-bootstrap/Col";
-import {Card, Row} from "react-bootstrap";
 
-
-
-const CoinSearch: React.FC = () => {
+const CoinPolicy: React.FC = () => {
     return (
         <>
             <div style={{display:'block',
-                width:"100%"}}>
-                <h3>코인 핫이슈</h3>
+                        width:"100%"}}>
+                <h3>코인 정책</h3>
             </div>
             <div className="d-flex">
                 <Row xs={1} md={4} className="g-5">
@@ -28,9 +26,10 @@ const CoinSearch: React.FC = () => {
                         </Col>
                     ))}
                 </Row>
+
             </div>
         </>
     );
 };
 
-export default CoinSearch;
+export default CoinPolicy;

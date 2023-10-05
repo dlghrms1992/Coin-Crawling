@@ -3,8 +3,9 @@ import LeftContents from "./TopContents/RightContents";
 import RightContents from "./TopContents/RightContents";
 import MiddleContents from "./TopContents/MiddleContents";
 import CoinCrawling from "./CoinCrawling/CoinCrawling";
-import CoinNews from "./CoinNews/CoinNews";
+import CoinNews from "./CoinStory/CoinNews";
 import CoinSearch from "./CoinSearch/CoinSearch";
+import CoinPolicy from "./CoinStory/CoinPolicy";
 
 const MainView: React.FC = () => {
     return (
@@ -20,6 +21,7 @@ const MainView: React.FC = () => {
                 </Row>
                 <>
                     <CoinNews></CoinNews>
+                    <CoinPolicy></CoinPolicy>
                 </>
 
                 <Row>

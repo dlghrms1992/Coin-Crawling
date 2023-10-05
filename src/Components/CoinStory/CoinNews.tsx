@@ -26,7 +26,6 @@ const CoinNews: React.FC = () => {
                         </Col>
                     ))}
                 </Row>
-
             </div>
         </>
     );
